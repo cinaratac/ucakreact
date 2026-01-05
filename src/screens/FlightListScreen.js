@@ -16,7 +16,7 @@ export default function FlightListScreen({ route, navigation }) {
     <TouchableOpacity 
       style={styles.flightCard}
       // FlightListScreen.js içinde
-onPress={() => navigation.navigate('SeatSelection', { flight: item })}
+      onPress={() => navigation.navigate('SeatSelection', { flight: item })}
     >
       <View style={styles.flightHeader}>
         <View style={styles.logoContainer}>

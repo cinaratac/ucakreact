@@ -5,6 +5,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons'; // İkonları buradan çekiyoruz
 import SeatSelectionScreen from './src/screens/SeatSelectionScreen';
+import { BookingProvider } from './src/context/BookingContext';
+import { BookingProvider } from './src/context/BookingContext';
 // Ekranlar
 import HomeScreen from './src/screens/HomeScreen';
 import FlightListScreen from './src/screens/FlightListScreen';

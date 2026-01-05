@@ -18,7 +18,8 @@ export default function TicketDetailScreen({ route, navigation }) {
       [
         { 
           text: "Biletlerime Git", 
-          onPress: () => navigation.navigate('MyTickets') // Birazdan bu ekranı yapacağız
+         
+          onPress: () => navigation.navigate('MyTickets')
         }
       ]
     );
