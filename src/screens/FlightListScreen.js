@@ -1,7 +1,6 @@
-// Dosya: src/screens/FlightListScreen.js
 import React from 'react';
 import { View, Text, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
-import { flightsData } from '../data'; // Veriyi bir üst klasörden çektik
+import { flightsData } from '../data';
 import { COLORS } from '../constants/theme';
 
 export default function FlightListScreen({ route, navigation }) {
@@ -15,7 +14,7 @@ export default function FlightListScreen({ route, navigation }) {
   const renderItem = ({ item }) => (
     <TouchableOpacity 
       style={styles.flightCard}
-      // FlightListScreen.js içinde
+     
       onPress={() => navigation.navigate('SeatSelection', { flight: item })}
     >
       <View style={styles.flightHeader}>

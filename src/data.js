@@ -2,7 +2,7 @@ export const flightsData = [
   {
     id: '1',
     airline: 'Turkish Airlines',
-    logo: 'TK', // Logolar için metin kullanıyoruz, url de olabilir
+    logo: 'TK', 
     from: 'IST',
     to: 'NYC',
     date: '2024-05-20',

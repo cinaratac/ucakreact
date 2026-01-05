@@ -1,8 +1,7 @@
-// Dosya: src/screens/ProfileScreen.js
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { COLORS } from '../constants/theme';
-import { Ionicons } from '@expo/vector-icons'; // Expo'nun kendi ikon kütüphanesi
+import { Ionicons } from '@expo/vector-icons'; 
 
 export default function ProfileScreen() {
   return (

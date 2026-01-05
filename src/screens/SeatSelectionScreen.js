@@ -1,4 +1,3 @@
-// Dosya: src/screens/SeatSelectionScreen.js
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView, Alert } from 'react-native';
 import { COLORS } from '../constants/theme';
@@ -8,8 +7,7 @@ export default function SeatSelectionScreen({ route, navigation }) {
   const { flight } = route.params;
   const [selectedSeat, setSelectedSeat] = useState(null);
 
-  // 6 Sıralı, 4 Koltuklu (A,B - Koridor - C,D) Mock Data
-  // 'taken': Dolu, 'free': Boş
+ 
   const ROWS = [
     { id: 1, seats: [{ lbl: '1A', status: 'taken' }, { lbl: '1B', status: 'taken' }, { lbl: '1C', status: 'free' }, { lbl: '1D', status: 'free' }] },
     { id: 2, seats: [{ lbl: '2A', status: 'free' }, { lbl: '2B', status: 'free' }, { lbl: '2C', status: 'taken' }, { lbl: '2D', status: 'taken' }] },
@@ -29,7 +27,7 @@ export default function SeatSelectionScreen({ route, navigation }) {
       Alert.alert('Uyarı', 'Lütfen bir koltuk seçiniz.');
       return;
     }
-    // Seçilen koltuk bilgisini de ekleyerek Detay sayfasına gidiyoruz
+   
     navigation.navigate('TicketDetail', { flight: flight, seat: selectedSeat });
   };
 
@@ -42,14 +40,14 @@ export default function SeatSelectionScreen({ route, navigation }) {
     let iconColor = '#d1d5db';
 
     if (isTaken) {
-      backgroundColor = '#e5e7eb'; // Gri (Dolu)
+      backgroundColor = '#e5e7eb';
       iconColor = '#9ca3af';
     } else if (isSelected) {
-      backgroundColor = COLORS.accent; // Turuncu (Seçili)
+      backgroundColor = COLORS.accent;
       borderColor = COLORS.accent;
       iconColor = COLORS.white;
     } else {
-      borderColor = COLORS.primary; // Mavi çerçeve (Boş)
+      borderColor = COLORS.primary; 
       iconColor = COLORS.primary;
     }
 

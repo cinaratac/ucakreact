@@ -1,5 +1,5 @@
-// Dosya: src/screens/TicketDetailScreen.js
-import React, { useContext } from 'react'; // useContext ekle
+
+import React, { useContext } from 'react';
 import { View, Text, TouchableOpacity, Alert, StyleSheet } from 'react-native';
 import { COLORS } from '../constants/theme';
 import { BookingContext } from '../context/BookingContext';
@@ -8,10 +8,10 @@ export default function TicketDetailScreen({ route, navigation }) {
  const { flight, seat } = route.params;
  const { addBooking } = useContext(BookingContext);
   const handleBooking = () => {
-    // 1. Bileti kaydet
+   
     addBooking(flight, seat);
 
-    // 2. Kullanıcıyı bilgilendir ve Biletlerim ekranına yönlendir
+   
     Alert.alert(
       "Harika!",
       "Biletiniz başarıyla oluşturuldu.",

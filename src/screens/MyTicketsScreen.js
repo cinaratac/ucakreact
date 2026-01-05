@@ -1,7 +1,6 @@
-// Dosya: src/screens/MyTicketsScreen.js
 import React, { useContext } from 'react';
 import { View, Text, FlatList, StyleSheet } from 'react-native';
-import { BookingContext } from '../context/BookingContext'; // Veriyi buradan çekeceğiz
+import { BookingContext } from '../context/BookingContext'; 
 import { COLORS } from '../constants/theme';
 import { Ionicons } from '@expo/vector-icons';
 
